@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:text="Số lần dự đoán"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <EditText
+                    android:id="@+id/editTextNgayDuDoan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="7" >
+                </EditText>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonThongKeDuDoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thống Kê Dự Đoán" />
+
+            <TextView
+                android:id="@+id/tvServerTraVeDuDoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="65"
+                android:text="Kết quả thống kê"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <TextView
+                    android:id="@+id/tvChuDayso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cặp số"
+                    android:textColor="#0101DF"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/tvChuDayXuatHien"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Lượt"
+                    android:textColor="#DF013A"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tvChuDayPhanTram"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tỉ lệ"
+                    android:textColor="#0101DF"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lvMainDuDoan"
+                android:layout_width="match_parent"
+                android:layout_height="3600dp" >
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

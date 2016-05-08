@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvDuDoanTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="thieumao"
+            android:textColor="#0101DF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:text="Số chọn:"
+                android:textColor="#DF013A"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tvDuDoanKetQua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingLeft="30dp"
+                android:text="18-94"
+                android:textColor="#0101DF"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDuDoanNoiDung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Con này đẹp đó!"
+            android:textColor="#0101DF" />
+
+        <TextView
+            android:id="@+id/tvDuDoanThoiGian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:text="2013-12-18 14:06:41"
+            android:textColor="#DF013A"
+            android:textSize="10dp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+</LinearLayout>

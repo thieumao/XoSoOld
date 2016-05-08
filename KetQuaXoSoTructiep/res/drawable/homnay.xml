@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<item android:drawable="@drawable/hom_nay_2" android:state_pressed="true"/>
+    <item android:drawable="@drawable/bthomnay"/>
+	 
+	 <!-- 
+    <item android:drawable="@drawable/bthomnay" android:state_pressed="true"/>
+    <item android:drawable="@drawable/hom_nay_2"/>
+    -->
+    
+</selector>

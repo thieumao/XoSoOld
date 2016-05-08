@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cudo.ketqua.xoso.soicau"
+    android:versionCode="10"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ketquaxoso"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Register Activity -->
+        <activity
+            android:name=".GCMRegisterActivity"
+            android:label="@string/app_name" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".GCMMainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.cudo.ketqua.xoso.soicau" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".GCMIntentService" />
+
+        <activity
+            android:name="com.cudo.ketqua.xoso.soicau.Splash"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.cudo.ketqua.xoso.soicau.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light" >
+            <!-- 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+             -->
+        </activity>
+        <activity
+            android:name="com.cudo.ketqua.xoso.soicau.ketqua.KetQuaActivity"
+            android:label="@string/title_activity_ket_qua"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.cudo.ketqua.xoso.soicau.homnay.HomNayActivity"
+            android:label="@string/title_activity_hom_nay"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.cudo.ketqua.xoso.soicau.giaimong.GiaiMongActivity"
+            android:label="@string/title_activity_giai_mong"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.cudo.ketqua.xoso.soicau.dudoan.DuDoanActivity"
+            android:label="@string/title_activity_du_doan"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.cudo.ketqua.xoso.soicau.phantich.PhanTichActivity"
+            android:label="@string/title_activity_phan_tich"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.cudo.ketqua.xoso.soicau.thongke.ThongKeActivity"
+            android:label="@string/title_activity_thong_ke"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.cudo.ketqua.xoso.soicau.soicau.SoiCauActivity"
+            android:label="@string/title_activity_soi_cau"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.cudo.ketqua.xoso.soicau.quaythu.QuayThuActivity"
+            android:label="@string/title_activity_quay_thu"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.cudo.ketqua.xoso.soicau.ketqua.KetQuaHomKhac"
+            android:label="@string/title_activity_ket_qua_hom_khac"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.cudo.ketqua.xoso.soicau.ketqua.KetQuaChiTiet"
+            android:label="@string/title_activity_ket_qua_chi_tiet"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.cudo.ketqua.xoso.soicau.thongke.ThongKeDau"
+            android:label="@string/title_activity_thong_ke_dau"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.cudo.ketqua.xoso.soicau.thongke.ThongKeDuoi"
+            android:label="@string/title_activity_thong_ke_duoi"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.cudo.ketqua.xoso.soicau.thongke.ThongKe0099"
+            android:label="@string/title_activity_thong_ke0099"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.cudo.ketqua.xoso.soicau.thongke.ThongKeDuDoan"
+            android:label="@string/title_activity_thong_ke_du_doan"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <!--
+        <activity
+            android:name="com.cudo.ketqua.xoso.soicau.MarketActivity"
+            android:label="@string/title_activity_market"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity> 
+        -->
+
+
+        <!-- Admod -->
+        <!--
+        <meta-data
+            android:name="ADMOB_ALLOW_LOCATION_FOR_ADS"
+            android:value="true" >
+        </meta-data>
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        -->
+        <!-- admod -->
+
+
+        <!-- Start App -->
+        <activity
+            android:name="com.startapp.android.publish.list3d.List3DActivity"
+            android:taskAffinity="com.ksec.smslove.AppWall"
+            android:theme="@android:style/Theme" />
+        <activity
+            android:name="com.startapp.android.publish.AppWallActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:taskAffinity="com.ksec.smslove.AppWall"
+            android:theme="@android:style/Theme.Translucent" />
+        <!-- Start App End -->
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- GCM connects to Internet Services. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Creates a custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="com.cudo.ketqua.xoso.soicau.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.cudo.ketqua.xoso.soicau.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Network State Permissions to detect Internet status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+</manifest>
